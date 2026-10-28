@@ -1,0 +1,28 @@
+{
+  "cli": { "version": ">= 16.0.0", "requireCommit": true },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "environment": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "environment": "preview",
+      "channel": "preview"
+    },
+    "production": {
+      "distribution": "store",
+      "environment": "production",
+      "channel": "production",
+      "autoIncrement": true,
+      "android": { "buildType": "app-bundle" }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": { "track": "internal", "releaseStatus": "draft" }
+    }
+  }
+}
+

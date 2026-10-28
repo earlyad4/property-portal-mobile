@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "PropertyPortal",
+    "slug": "property-portal-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-dev-client"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.example.propertyportal",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSAppTransportSecurity": { "NSAllowsArbitraryLoads": false }
+      }
+    },
+    "android": {
+      "package": "org.example.propertyportal",
+      "versionCode": 1,
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {}
+  }
+}
